@@ -1,0 +1,84 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+h1 {
+    background-color: rgb(19, 16, 16);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    background-color: rgb(164, 37, 8);
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+p {
+    background-color: bisque;
+    color: black;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+ul {
+    background-color: rgb(68, 168, 202);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Profile image */
+img {
+    width: 180px;
+    height: 180px;
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+/* Container for image + contact */
+.intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 300px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Contact information */
+.contact-info {
+    font-size: 1rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p, ul {
+        font-size: 0.95rem;
+    }
+}
